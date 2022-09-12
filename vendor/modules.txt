@@ -1,0 +1,46 @@
+# github.com/golang/protobuf v1.5.2
+github.com/golang/protobuf/proto
+# github.com/gorilla/websocket v1.5.0
+github.com/gorilla/websocket
+# github.com/name5566/leaf v0.0.0-20200516012428-8592b1abbbbe
+github.com/name5566/leaf
+github.com/name5566/leaf/conf
+github.com/name5566/leaf/chanrpc
+github.com/name5566/leaf/module
+github.com/name5566/leaf/log
+github.com/name5566/leaf/gate
+github.com/name5566/leaf/recordfile
+github.com/name5566/leaf/network/protobuf
+github.com/name5566/leaf/cluster
+github.com/name5566/leaf/console
+github.com/name5566/leaf/go
+github.com/name5566/leaf/timer
+github.com/name5566/leaf/network
+# google.golang.org/protobuf v1.26.0
+google.golang.org/protobuf/encoding/prototext
+google.golang.org/protobuf/encoding/protowire
+google.golang.org/protobuf/proto
+google.golang.org/protobuf/reflect/protodesc
+google.golang.org/protobuf/reflect/protoreflect
+google.golang.org/protobuf/reflect/protoregistry
+google.golang.org/protobuf/runtime/protoiface
+google.golang.org/protobuf/runtime/protoimpl
+google.golang.org/protobuf/internal/encoding/messageset
+google.golang.org/protobuf/internal/encoding/text
+google.golang.org/protobuf/internal/errors
+google.golang.org/protobuf/internal/flags
+google.golang.org/protobuf/internal/genid
+google.golang.org/protobuf/internal/order
+google.golang.org/protobuf/internal/pragma
+google.golang.org/protobuf/internal/set
+google.golang.org/protobuf/internal/strs
+google.golang.org/protobuf/internal/encoding/defval
+google.golang.org/protobuf/internal/filedesc
+google.golang.org/protobuf/types/descriptorpb
+google.golang.org/protobuf/internal/filetype
+google.golang.org/protobuf/internal/impl
+google.golang.org/protobuf/internal/version
+google.golang.org/protobuf/internal/detrand
+google.golang.org/protobuf/internal/descfmt
+google.golang.org/protobuf/internal/descopts
+google.golang.org/protobuf/internal/encoding/tag

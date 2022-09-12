@@ -1,7 +1,7 @@
 package login
 
 import (
-	"server/login/internal"
+	"github.com/shanyux/leafserver/src/server/login/internal"
 )
 
 var (
