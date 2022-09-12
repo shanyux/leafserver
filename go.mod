@@ -1,4 +1,4 @@
-module github.com/shanyux/√
+module github.com/shanyux/leafserver
 
 go 1.12
 
