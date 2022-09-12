@@ -8,7 +8,7 @@ package msg
 
 import (
 	"github.com/name5566/leaf/network/protobuf"
-	cs_msg "github.com/shanyux/leafserver/src/proto/cs_msg.pb.go"
+	csmsg "github.com/shanyux/leafserver/src/proto/csmsg.pb.go"
 )
 
 // 使用默认的 JSON 消息处理器（默认还提供了 protobuf 消息处理器）
@@ -16,7 +16,7 @@ var Processor = protobuf.NewProcessor()
 
 func init() {
 	// 这里我们注册了一个 JSON 消息 Hello
-	Processor.Register(&cs_msg.Hello{})
+	Processor.Register(&csmsg.Hello{})
 }
 
 // 一个结构体定义了一个 JSON 消息的格式

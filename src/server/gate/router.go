@@ -7,13 +7,14 @@
 package gate
 
 import (
+	csmsg "github.com/shanyux/leafserver/src/proto/csmsg.pb.go"
+
 	"github.com/shanyux/leafserver/src/server/game"
 	"github.com/shanyux/leafserver/src/server/msg"
-	cs_msg "github.com/shanyux/leafserver/src/server/proto/cs_msg.pb.go"
 )
 
 func init() {
 	// 这里指定消息 Hello 路由到 game 模块
 	// 模块间使用 ChanRPC 通讯，消息路由也不例外
-	msg.Processor.SetRouter(&cs_msg.Hello{}, game.ChanRPC)
+	msg.Processor.SetRouter(&csmsg.Hello{}, game.ChanRPC)
 }

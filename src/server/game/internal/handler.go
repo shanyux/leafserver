@@ -11,12 +11,12 @@ import (
 
 	"github.com/name5566/leaf/gate"
 	"github.com/name5566/leaf/log"
-	cs_msg "github.com/shanyux/leafserver/src/proto/cs_msg.pb.go"
+	csmsg "github.com/shanyux/leafserver/src/proto/csmsg.pb.go"
 )
 
 func init() {
 	// 向当前模块（game 模块）注册 Hello 消息的消息处理函数 handleHello
-	handler(&cs_msg.Hello{}, handleHello)
+	handler(&csmsg.Hello{}, handleHello)
 }
 
 func handler(m interface{}, h interface{}) {
@@ -25,7 +25,7 @@ func handler(m interface{}, h interface{}) {
 
 func handleHello(args []interface{}) {
 	// 收到的 Hello 消息
-	m := args[0].(*cs_msg.Hello)
+	m := args[0].(*csmsg.Hello)
 	// 消息的发送者
 	a := args[1].(gate.Agent)
 
@@ -33,7 +33,7 @@ func handleHello(args []interface{}) {
 	log.Debug("hello %v", m.Name)
 
 	// 给发送者回应一个 Hello 消息
-	a.WriteMsg(&cs_msg.Hello{
+	a.WriteMsg(&csmsg.Hello{
 		Name: "client",
 	})
 }
